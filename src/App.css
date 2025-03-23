@@ -1,38 +1,114 @@
-.App {
+.app-container {
+  background: linear-gradient(135deg, #e2ebf0 0%, #cce0ff 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-bottom: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon {
+  width: 28px;
+}
+
+.info {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.guess-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+.item-img {
+  width: 40px;
+  height: auto;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.2));
+}
+
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 12px;
+}
+
+.form-row label {
+  font-weight: 500;
+  width: 80px;
+  text-align: right;
+}
+
+.form-row input {
+  width: 60px;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #3498db;
   color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin: 0.25rem;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  background-color: #2980b9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn.reset {
+  background-color: #e74c3c;
+}
+
+.btn.reset:hover {
+  background-color: #c0392b;
+}
+
+.footer {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 1.5rem;
 }
